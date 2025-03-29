@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation Solutions | AgriRent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .robot-demo {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-green-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-tractor text-2xl"></i>
+                <h1 class="text-2xl font-bold">AgriRent</h1>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-green-200">Home</a>
+                <a href="equipment.html" class="hover:text-green-200">Equipment</a>
+                <a href="automation.html" class="font-semibold hover:text-green-200">Automation</a>
+                <a href="#" class="hover:text-green-200">How It Works</a>
+                <a href="#" class="hover:text-green-200">Contact</a>
+            </div>
+            <div class="flex space-x-4">
+                <button class="px-4 py-2 rounded hover:bg-green-700">Login</button>
+                <button class="bg-white text-green-800 px-4 py-2 rounded font-medium hover:bg-gray-100">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="robot-demo text-white py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Revolutionizing Farming with Automation</h1>
+            <p class="text-xl max-w-2xl mx-auto mb-8">Our line-following robots and smart farming solutions help increase productivity while reducing labor costs.</p>
+            <button class="bg-green-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-green-700">View Available Robots</button>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Why Choose Agricultural Automation?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md feature-card transition duration-300">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Increased Efficiency</h3>
+                    <p class="text-gray-600">Robots can work 24/7 with consistent precision, completing tasks faster than manual labor.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md feature-card transition duration-300">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Cost Savings</h3>
+                    <p class="text-gray-600">Reduce labor costs and minimize waste through precise application of inputs.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md feature-card transition duration-300">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Sustainable Farming</h3>
+                    <p class="text-gray-600">Precision agriculture reduces chemical usage and environmental impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Line Following Robot Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Line-Following Robot Technology</h2>
+                    <p class="text-gray-600 mb-6">Our advanced line-following robots use computer vision and AI to navigate fields with precision, performing tasks like planting, weeding, and crop monitoring.</p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Precision navigation along crop rows</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Real-time crop health monitoring</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Automated weed detection and removal</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Data collection for yield optimization</span>
+                        </li>
+                    </ul>
+                    <button class="bg-green-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-700">Rent a Robot</button>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="bg-white p-4 rounded-lg shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Line following robot in action" 
+                             class="w-full rounded-lg">
+                        <div class="mt-4 text-center text-gray-600">
+                            <p>AgriBot LF-3000 performing precision weeding in a corn field</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Robot Models Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Available Robot Models</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Model 1 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md feature-card transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1592155931584-901ac15763e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Planting Robot" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute top-2 right-2 bg-green-600 text-white px-2 py-1 rounded text-sm font-medium">Available</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">AgriBot LF-3000</h3>
+                        <p class="text-gray-600 mb-4">Advanced line-following robot for precision planting and weeding.</p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold mb-2">Features:</h4>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2 text-xs"></i>
+                                    <span>Computer vision navigation</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2 text-xs"></i>
+                                    <span>Precision seed placement</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2 text-xs"></i>
+                                    <span>Automated weed detection</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-green-600 font-bold">$85/day</span>
+                            <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Model 2 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md feature-card transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Weeding Robot" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute top-2 right-2 bg-green-600 text-white px-2 py-1 rounded text-sm font-medium">Available</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">SmartWeeder W-450</h3>
+                        <p class="text-gray-600 mb-4">AI-powered weeding robot with computer vision for precise weed removal.</p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold mb-2">Features:</h4>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2 text-xs"></i>
+                                    <span>AI weed identification</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2 text-xs"></i>
+                                    <span>Precision mechanical weeding</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2 text-xs"></i>
+                                    <span>Solar-powered operation</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-green-600 font-bold">$90/day</span>
+                            <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Model 3 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md feature-card transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Harvesting Robot" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute top-2 right-2 bg-green-600 text-white px-2 py-1 rounded text-sm font-medium">Available</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">HarvestMaster HX-7</h3>
+                        <p class="text-gray-600 mb-4">Specialized harvesting robot for delicate fruits and vegetables.</p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold mb-2">Features:</h4>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2 text-xs"></i>
+                                    <span>Gentle robotic grippers</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2 text-xs"></i>
+                                    <span>Ripe fruit detection</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2 text-xs"></i>
+                                    <span>Automatic sorting</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-green-600 font-bold">$110/day</span>
+                            <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-green-700 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">What Farmers Say</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-green-800 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center mr-4">
+                            <span class="text-xl font-bold">JD</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">John Dawson</h4>
+                            <p class="text-green-200 text-sm">Corn Farmer, Iowa</p>
+                        </div>
+                    </div>
+                    <p class="text-green-100">"The line-following robot reduced our weeding time by 70% and cut herbicide use in half. The rental model made it affordable to try before investing."</p>
+                    <div class="flex mt-4">
+                        <i class="fas fa-star text-yellow-300 mr-1"></i>
+                        <i class="fas fa-star text-yellow-300 mr-1"></i>
+                        <i class="fas fa-star text-yellow-300 mr-1"></i>
+                        <i class="fas fa-star text-yellow-300 mr-1"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                    </div>
+                </div>
+                <div class="bg-green-800 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center mr-4">
+                            <span class="text-xl font-bold">MS</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Maria Sanchez</h4>
+                            <p class="text-green-200 text-sm">Vineyard Owner, California</p>
+                        </div>
+                    </div>
+                    <p class="text-green-100">"The harvesting robot was a game-changer for our vineyard. It picks grapes with perfect precision and works through the night during harvest season."</p>
+                    <div class="flex mt-4">
+                        <i class="fas fa-star text-yellow-300 mr-1"></i>
+                        <i class="fas fa-star text-yellow-300 mr-1"></i>
+                        <i class="fas fa-star text-yellow-300 mr-1"></i>
+                        <i class="fas fa-star text-yellow-300 mr-1"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                    </div>
+                </div>
+                <div class="bg-green-800 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center mr-4">
+                            <span class="text-xl font-bold">TW</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Thomas Wilson</h4>
+                            <p class="text-green-200 text-sm">Organic Vegetable Farmer, Oregon</p>
+                        </div>
+                    </div>
+                    <p class="text-green-100">"As an organic farm, the weeding robot lets us maintain our fields without herbicides. The rental option makes this technology accessible for small farms."</p>
+                    <div class="flex mt-4">
+                        <i class="fas fa-star text-yellow-300 mr-1"></i>
+                        <i class="fas fa-star text-yellow-300 mr-1"></i>
+                        <i class="fas fa-star text-yellow-300 mr-1"></i>
+                        <i class="fas fa-star text-yellow-300 mr-1"></i>
+                        <i class="fas fa-star-half-alt text-yellow-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800">Ready to Automate Your Farm?</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">Our agricultural robots are available for rent by the day, week, or season. No long-term commitments.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button class="bg-green-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-green-700">Browse Available Robots</button>
+                <button class="border-2 border-green-600 text-green-600 px-8 py-3 rounded-lg font-bold hover:bg-green-50">Contact Our Experts</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">AgriRent</h3>
+                    <p>Making modern farming accessible to all through affordable equipment rental solutions.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-green-400">Home</a></li>
+                        <li><a href="equipment.html" class="hover:text-green-400">Equipment</a></li>
+                        <li><a href="automation.html" class="hover:text-green-400">Automation</a></li>
+                        <li><a href="#" class="hover:text-green-400">How It Works</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="fas fa-phone-alt mr-2"></i> +1 (800) 123-4567</li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-2"></i> info@agrirent.com</li>
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> 123 Farm Lane, AgriCity</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Newsletter</h4>
+                    <p class="mb-4">Subscribe for farming tips and special offers</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l text-gray-800 w-full">
+                        <button class="bg-green-600 px-4 py-2 rounded-r hover:bg-green-700">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2023 AgriRent. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
