@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | AgriRent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .contact-card {
+            transition: all 0.3s ease;
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+        .map-container {
+            height: 300px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-green-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-tractor text-2xl"></i>
+                <h1 class="text-2xl font-bold">AgriRent</h1>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-green-200">Home</a>
+                <a href="equipment.html" class="hover:text-green-200">Equipment</a>
+                <a href="automation.html" class="hover:text-green-200">Automation</a>
+                <a href="rental.html" class="hover:text-green-200">How It Works</a>
+                <a href="contact.html" class="font-semibold hover:text-green-200">Contact</a>
+            </div>
+            <div class="flex space-x-4">
+                <button class="px-4 py-2 rounded hover:bg-green-700">Login</button>
+                <button class="bg-white text-green-800 px-4 py-2 rounded font-medium hover:bg-gray-100">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-green-700 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">We're Here to Help</h1>
+            <p class="text-xl max-w-2xl mx-auto">Our team is ready to answer your questions about equipment rental, automation solutions, or any other inquiries.</p>
+        </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Phone Support -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md text-center contact-card">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Phone Support</h3>
+                    <p class="text-gray-600 mb-4">Speak directly with our rental specialists</p>
+                    <a href="tel:+18001234567" class="text-green-600 font-bold text-lg hover:text-green-700">+1 (800) 123-4567</a>
+                    <p class="text-gray-500 text-sm mt-2">Mon-Fri: 7am-7pm | Sat: 8am-5pm</p>
+                </div>
+
+                <!-- Email Support -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md text-center contact-card">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Email Us</h3>
+                    <p class="text-gray-600 mb-4">We typically respond within 24 hours</p>
+                    <a href="mailto:info@agrirent.com" class="text-green-600 font-bold text-lg hover:text-green-700">info@agrirent.com</a>
+                    <p class="text-gray-500 text-sm mt-2">For general inquiries and support</p>
+                </div>
+
+                <!-- Live Chat -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md text-center contact-card">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Live Chat</h3>
+                    <p class="text-gray-600 mb-4">Instant help during business hours</p>
+                    <button class="bg-green-600 text-white px-6 py-2 rounded font-bold hover:bg-green-700">Start Chat</button>
+                    <p class="text-gray-500 text-sm mt-2">Available Mon-Fri: 8am-6pm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row">
+                <!-- Contact Form -->
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Send Us a Message</h2>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="first-name" class="block text-gray-700 font-medium mb-2">First Name</label>
+                                <input type="text" id="first-name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                            </div>
+                            <div>
+                                <label for="last-name" class="block text-gray-700 font-medium mb-2">Last Name</label>
+                                <input type="text" id="last-name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <select id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                                <option value="">Select a subject</option>
+                                <option value="equipment">Equipment Rental</option>
+                                <option value="automation">Automation Solutions</option>
+                                <option value="support">Technical Support</option>
+                                <option value="billing">Billing Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+                        </div>
+                        <button type="submit" class="bg-green-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-700">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Map & Locations -->
+                <div class="lg:w-1/2 lg:pl-10">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Our Locations</h2>
+                    
+                    <!-- Map -->
+                    <div class="map-container mb-8 rounded-lg overflow-hidden shadow-lg">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215256018566!2d-73.9878446845938!3d40.74844097932881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjQiTiA3M8KwNTknMTkuNiJX!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy"></iframe>
+                    </div>
+
+                    <!-- Location Cards -->
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold mb-2 flex items-center">
+                                <i class="fas fa-map-marker-alt text-green-600 mr-2"></i>
+                                Main Office
+                            </h3>
+                            <p class="text-gray-600 mb-2">123 Farm Lane, AgriCity, AC 12345</p>
+                            <p class="text-gray-600 mb-2"><span class="font-medium">Hours:</span> Mon-Fri: 7am-7pm | Sat: 8am-5pm</p>
+                            <a href="#" class="text-green-600 hover:text-green-700 font-medium">Get Directions →</a>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold mb-2 flex items-center">
+                                <i class="fas fa-map-marker-alt text-green-600 mr-2"></i>
+                                Equipment Depot
+                            </h3>
+                            <p class="text-gray-600 mb-2">456 Harvest Road, Farmville, FV 67890</p>
+                            <p class="text-gray-600 mb-2"><span class="font-medium">Hours:</span> Mon-Fri: 8am-6pm | Sat: 9am-3pm</p>
+                            <a href="#" class="text-green-600 hover:text-green-700 font-medium">Get Directions →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ CTA -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800">Need Help Quickly?</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">Check our FAQ section for answers to common questions about equipment rental, payments, and more.</p>
+            <button class="bg-green-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-green-700">Visit FAQ Page</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">AgriRent</h3>
+                    <p>Making modern farming accessible to all through affordable equipment rental solutions.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-green-400">Home</a></li>
+                        <li><a href="equipment.html" class="hover:text-green-400">Equipment</a></li>
+                        <li><a href="automation.html" class="hover:text-green-400">Automation</a></li>
+                        <li><a href="rental.html" class="hover:text-green-400">How It Works</a></li>
+                        <li><a href="contact.html" class="hover:text-green-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="fas fa-phone-alt mr-2"></i> +1 (800) 123-4567</li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-2"></i> info@agrirent.com</li>
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> 123 Farm Lane, AgriCity</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Newsletter</h4>
+                    <p class="mb-4">Subscribe for farming tips and special offers</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l text-gray-800 w-full">
+                        <button class="bg-green-600 px-4 py-2 rounded-r hover:bg-green-700">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2023 AgriRent. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
